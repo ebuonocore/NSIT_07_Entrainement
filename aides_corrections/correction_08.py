@@ -25,5 +25,6 @@ def compare_les_tris_et_trace(N:int):
     xlabel("Taille des listes")
     ylabel("Temps")
     legend()
+    show()
     
 compare_les_tris_et_trace(50)
