@@ -21,7 +21,7 @@ def compare_les_tris(N:int, taille:int)->tuple:
 
     # Relève le chronomètre
     temps_debut2 = time.time()
-    # Boucle N fois le tri_selection L
+    # Boucle N fois le tri par la fonction native sorted() 
     for i in range(N):
         sorted(L)
     # Relève le chronomètre
