@@ -20,11 +20,12 @@ def compare_les_tris_et_trace(N:int):
         temps_tri_selection.append(temps1)
         temps_tri_sorted.append(temps2)
     
+    clf()  # Efface le graphique pour éviter d'accumuler les courbes
     plot(tailles, temps_tri_selection, label="tri_selection()")
     plot(tailles, temps_tri_sorted, label="sorted()") 
     xlabel("Taille des listes")
     ylabel("Temps")
     legend()
-    show()
+    show()  # Affiche le graphique
     
 compare_les_tris_et_trace(50)
